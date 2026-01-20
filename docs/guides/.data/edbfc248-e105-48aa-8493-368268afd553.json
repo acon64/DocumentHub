@@ -1,0 +1,29 @@
+{
+  "id": "edbfc248-e105-48aa-8493-368268afd553",
+  "title": "test guide 1",
+  "about": "",
+  "products": [],
+  "accessDemo": {
+    "text": ""
+  },
+  "useCases": [],
+  "creatorEmail": "demo.user@cisco.com",
+  "createdAt": "2026-01-20T16:19:48.572Z",
+  "updatedAt": "2026-01-20T16:19:56.462Z",
+  "status": "draft",
+  "slug": "edbfc248-e105-48aa-8493-368268afd553",
+  "category": "general",
+  "limitations": "",
+  "requirements": {
+    "required": [],
+    "optional": []
+  },
+  "aboutSolution": "",
+  "keyBenefits": "",
+  "scenariosOverview": "",
+  "topology": {
+    "description": "",
+    "diagramImageId": null
+  },
+  "whatsNext": ""
+}
