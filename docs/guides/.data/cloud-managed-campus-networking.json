@@ -1,0 +1,920 @@
+{
+  "id": "cloud-managed-campus-networking",
+  "title": "Cloud-Managed Campus Networking for the AI Era",
+  "about": "Evolving business needs and rapid advancements in technology present organizations with the perfect opportunity to modernize their campus and branch networks. Upgrading network infrastructure is no longer just about replacing aging equipment. It's about embracing innovation, enhancing agility, and positioning your organization for long-term success.\n\nIn this demonstration, you'll discover how Cisco Cloud-First Campus empowers organizations to seamlessly manage and monitor their campus and branch environments through the Meraki Dashboard.\n\nWith support for Meraki and Catalyst switches, MX appliances, and the latest Wi-Fi 7 technologies, this integrated approach unifies cloud-managed and cloud-monitored devices into a flexible, scalable foundation tailored to your unique requirements.\n\nYou'll experience how proactive management ensures smooth transitions during hardware refresh cycles, minimizing disruption and supporting business continuity.",
+  "products": [
+    "Catalyst/Meraki Switching and Wireless",
+    "Meraki Cloud Fabric",
+    "Meraki Access Manager",
+    "Meraki Adaptive Policy",
+    "Workflows",
+    "ThousandEyes (Including Endpoint Mobile Agent)",
+    "Splunk",
+    "Webex"
+  ],
+  "accessDemo": {
+    "text": "To use Meraki Dashboard, ThousandEyes, and other integrated tools, you must log in to each portal separately from the iDAC dashboard.\n\nNOTE: The links between Meraki Dashboard and ThousandEyes may not be seamless in this demo. Each product requires its own login session."
+  },
+  "useCases": [
+    {
+      "id": "uc1-meraki-dashboard",
+      "title": "Explore the Power of the Meraki Dashboard: Real-Time Network Observability",
+      "scenarios": [
+        {
+          "id": "uc1-s1-navigate-dashboard",
+          "title": "Navigate the Meraki Dashboard: A Day in the Life of an IT Admin",
+          "persona": "Andrew Moore, Network Administrator",
+          "demoScenario": "Andrew begins his day by opening Meraki Dashboard, the central platform for managing his organization's network. The dashboard offers a unified, cloud-first view of the entire enterprise, showing an organized hierarchy from global to network to device level. Andrew can easily navigate between branches, campuses, and devices—wired and wireless alike—thanks to Meraki's seamless integration and intuitive interface.\n\nHe explores how the dashboard consolidates management for switches, access points, security appliances, and more, all in one place. Enterprise-grade features such as Access Manager, Assurance, Insights, and alerting are built in, providing real-time visibility and streamlined daily operations.",
+          "painPoint": "Managing a large, distributed network with multiple device types has traditionally required Andrew to juggle several tools and platforms, making it difficult to maintain visibility and consistency across the organization. Manual monitoring and configuration eat up time and increase the risk of oversight causing outages.\n\nWe use the following Cisco features and products to address this pain point:\n• Meraki Dashboard: To unify network management and monitoring for wired, wireless, routing, and security services\n• Assurance and Insights: For advanced analytics and operational visibility\n• Meraki and Catalyst Switching: Enterprise access layer switching\n• Meraki and Catalyst Access Points: Wi-Fi 7 implementation, management, and troubleshooting\n• Meraki MX Security Appliances: Secure and provide connectivity to the internet and other branch locations",
+          "steps": [
+            {
+              "id": "uc1-s1-step1",
+              "what": "We explore the Meraki Dashboard to understand how it provides unified, real-time visibility and management for the entire network. We use the dashboard to view overall network health, analyze connected clients and their activity, examine traffic analytics, and visualize network topology.",
+              "why": "In this step, we explore the observability features of the Meraki dashboard. In the Organization Summary dashboard, administrators can see the health status of all networks and devices across the whole organization.",
+              "substeps": [
+                {
+                  "id": "uc1-s1-step1-a",
+                  "label": "a",
+                  "content": "Let's investigate network-specific details. Click Network at the top of the left navigation. Select Branch2. Navigate to Network-wide > Clients.\n\nAdministrators get an at-a-glance overview of every device connected to the network, Branch 2 in this case, whether wired or wireless.",
+                  "bullets": [
+                    "Instantly see device names, IP and MAC addresses, and their connection status (online or offline).",
+                    "Track how much bandwidth each client is using, along with the types of applications and services they're accessing.",
+                    "Click into any device for more details, such as its operating system, VLAN assignment, and the specific port or access point it's using.",
+                    "Review a device's usage history and easily search or filter the list to find what you need.",
+                    "Apply or adjust network policies, such as bandwidth limits or access restrictions, right from the same view."
+                  ]
+                },
+                {
+                  "id": "uc1-s1-step1-b",
+                  "label": "b",
+                  "content": "Navigate to Network-wide > Traffic Analytics.\n\nThe Traffic Analytics tab in the Meraki Dashboard gives administrators a clear and detailed look at how network bandwidth is being used across all your networks, Branch 2 in this case.",
+                  "bullets": [
+                    "See a breakdown of overall traffic by application category (such as web browsing, streaming, or file sharing) and by specific applications (such as YouTube, Dropbox, or Microsoft 365).",
+                    "Identify which users or devices are generating the most traffic and what services are consuming the most bandwidth."
+                  ]
+                },
+                {
+                  "id": "uc1-s1-step1-c",
+                  "label": "c",
+                  "content": "Navigate to Network-wide > Topology. This is a visual representation of your network."
+                }
+              ]
+            },
+            {
+              "id": "uc1-s1-step2",
+              "what": "We see how the Meraki Dashboard consolidates management of all major network components: security appliances, switches, and wireless access points into a single, unified interface. We navigate through status and configuration pages for each device type to see how administrators monitor and control the network from one place.",
+              "why": "To demonstrate how unified management simplifies daily operations, improves visibility, and streamlines configuration across the entire network, making it easier to maintain security, performance, and scalability.\n\nThe Meraki Dashboard brings all key aspects of enterprise network management into a single, unified interface - making it remarkably easy to monitor and configure everything from security appliances to wireless access points and core switches.",
+              "substeps": [
+                {
+                  "id": "uc1-s1-step2-a",
+                  "label": "a",
+                  "content": "Navigate to Security & SD-WAN > Appliance Status.\n\nHere, administrators can instantly check the health and activity of their security appliances. This includes real-time status, VPN connections, active threats, and WAN performance metrics. Essential security and traffic controls such as firewall rules, content filtering, and SD-WAN policies are fully accessible and configurable."
+                },
+                {
+                  "id": "uc1-s1-step2-b",
+                  "label": "b",
+                  "content": "Navigate to Switching > Switches. Select Branch2-9300.\n\nThe Switching section offers a comprehensive view of all switches in the network. Administrators can monitor switch health, port status, and traffic flows in real time. Selecting a switch reveals detailed information on each port, including connected devices, PoE power consumption, and configuration options.\n\nVLAN settings, port security, and even firmware upgrades can be managed remotely, streamlining daily operations.\n\nNOTE: Many pages in the Meraki Dashboard allow you to switch between Old Version and New Version. We suggest you always switch to the New Version, if possible."
+                },
+                {
+                  "id": "uc1-s1-step2-c",
+                  "label": "c",
+                  "content": "Navigate to Wireless > Access Points. Select Branch2-AP2.\n\nIn this Wireless section, you see a live inventory of all deployed Access Points across the organization. Each AP's connectivity, usage, client count, and even channel utilization are visible at a glance.\n\nBy selecting an individual access point, you can review detailed performance stats, troubleshoot client issues, and manage settings such as SSIDs and radio configurations—all without leaving the dashboard."
+                }
+              ]
+            },
+            {
+              "id": "uc1-s1-step3",
+              "what": "We learn how to use Meraki Access Manager for centralized, cloud-based network access control (NAC). We review how access policies are set up and enforced for users and devices, and how the integration with identity services (such as Microsoft Entra ID) is managed—all from the Meraki Dashboard.",
+              "why": "To show how cloud-based NAC enables rapid, scalable, and consistent access policy deployment without the complexity or hardware requirements of traditional solutions, improving security, and operational efficiency.\n\nMeraki Access Manager is changing the game for network access control. Unlike traditional NAC solutions that require on-site appliances and advanced configuration, Access Manager is a fully cloud-based NAC and simple to use right from the Meraki Dashboard.",
+              "substeps": [
+                {
+                  "id": "uc1-s1-step3-a",
+                  "label": "a",
+                  "content": "Navigate to Access Manager > Users.\n\nWhat makes Access Manager stand out is how naturally it fits into the rest of the Meraki ecosystem. Security, wireless, and switching all work together under one pane of glass, making it easier to keep things secure and consistent. Here you can get a centralized view into how Access Manager is configured. In this demo, we've integrated Access Manager with Microsoft Entra ID for user identity."
+                }
+              ]
+            },
+            {
+              "id": "uc1-s1-step4",
+              "what": "Meraki Network Visibility provides a suite of powerful tools: Assurance, Insight, and Organization Alerts that give IT administrators a comprehensive view of network health, application performance, and security events. These features allow teams to monitor, troubleshoot, and respond to issues proactively across the entire organization.",
+              "why": "Having complete visibility into network operations is essential for maintaining a reliable and high performing network. By leveraging these tools, IT teams can detect problems early, understand their root causes, and respond quickly minimizing downtime, improving user experience, and supporting seamless business operations.",
+              "substeps": [
+                {
+                  "id": "uc1-s1-step4-a",
+                  "label": "a",
+                  "content": "Navigate to Assurance > Overview.\n\nReview the information found here. Note the overall health score, as well as details about the clients, network devices, and applications."
+                },
+                {
+                  "id": "uc1-s1-step4-b",
+                  "label": "b",
+                  "content": "Navigate to Insight > Web App Health.\n\nExplore the applications monitored by ThousandEyes Enterprise Agents running on MX appliances in every network. ThousandEyes test results are reported back to Meraki Dashboards, and can be viewed in both the Meraki Dashboard Insight page and in the ThousandEyes portal itself.\n\nNOTE: Insight integrates nicely with ThousandEyes to give detailed path analytics."
+                },
+                {
+                  "id": "uc1-s1-step4-c",
+                  "label": "c",
+                  "content": "Navigate to Organization > Alerts. Investigate the active alerts in the Organization. Feel free to check alert details, see suggested actions, etc.\n\nOrganization Alerts are the network's early warning system. They notify administrators right away about important events, outages, or anything unusual happening anywhere across the organization's network."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc1-s2-cloud-first-networking",
+          "title": "See Cloud-First Networking in Action: Meraki-Managed Wired and Wireless Solutions",
+          "persona": "James Deen, Network Operations Engineer at PseudoCo",
+          "demoScenario": "James' job is to keep PseudoCo's branch networks running smoothly, no matter how the company grows or how many different devices pop up. At Branch 1, he's got Meraki devices everywhere. Managing them is a breeze! He logs into the Meraki Dashboard and can see, configure, and troubleshoot every access point, switch, and SSID in just a few clicks.\n\nBranch 2 is a bit different, it's built on Cisco Catalyst hardware. But here's where Meraki's true power really comes through. James doesn't have to switch tools or bounce between dashboards. Instead, he gets a single, cloud-based view of everything, Meraki and Catalyst alike.\n\nAt Branch 2, James has set up two Meraki access points and a Meraki Cloud Gateway (MCG) on-site. With L3 roaming using the MCG, roaming issues are gone. The MCG acts like a home base for wireless users.",
+          "painPoint": "Before Meraki, James was stuck juggling different management tools, struggling to keep user experience consistent, and worrying about enforcing policies across a mixed network. Users would often get disconnected or have to reconnect every time they moved around the office.\n\nWe use the following Cisco features and products to address this pain point:\n• Meraki Dashboard: Unified, easy management of both Meraki and Catalyst devices\n• Meraki Cloud Gateway: Smooth L3 roaming and keeping users connected as they move",
+          "steps": [
+            {
+              "id": "uc1-s2-step1",
+              "what": "We explore how the Meraki Dashboard provides centralized, cloud-based management for both Cisco Meraki and Cisco Catalyst switches. You will monitor device and port status, configure settings, and perform troubleshooting tasks for both device types from a single interface.",
+              "why": "To showcase how Cisco's unified cloud management streamlines operations, enabling consistent configuration, monitoring, and troubleshooting across the full Cisco switching portfolio.",
+              "substeps": [
+                {
+                  "id": "uc1-s2-step1-a",
+                  "label": "a",
+                  "content": "Click Network at the top of the left navigation and select Branch1. Navigate to Switching > Switches. Select the Branch1-MS130 switch.\n\nYou can view the real-time status of every port, any major device issues, see which devices are connected, and check traffic levels at a glance."
+                },
+                {
+                  "id": "uc1-s2-step1-b",
+                  "label": "b",
+                  "content": "Go to Branch2. Select the switch Branch2-9300.\n\nYou can see that the Catalyst 9300 switch was onboarded as a Meraki managed device right in the dashboard. Configuration Source: Cloud means that this device is fully managed by Meraki Dashboard."
+                }
+              ]
+            },
+            {
+              "id": "uc1-s2-step2",
+              "what": "We utilize the Meraki Dashboard to view and manage wireless access points and SSIDs. We assess real-time AP status, client activity, performance, and easily configure wireless network settings.",
+              "why": "To demonstrate how Meraki's management approach simplifies wireless network maintenance, troubleshooting, and optimization.",
+              "substeps": [
+                {
+                  "id": "uc1-s2-step2-a",
+                  "label": "a",
+                  "content": "Within Branch1, go to Wireless > Access Points and select Branch1-CW9162.\n\nHere, you get a quick snapshot of everything important: AP's current status, location on the network, and basic performance stats. Check out the Ports tab, Device Health section, Timeline tab, Connections, and Performance tab."
+                },
+                {
+                  "id": "uc1-s2-step2-b",
+                  "label": "b",
+                  "content": "Within the Wireless tab of Branch1, go to SSIDs.\n\nHere you'll find a clear overview of all the wireless networks running in your branch. Each SSID represents a different Wi-Fi network. You can adjust settings like network names, security types, VLAN tags, and access controls."
+                }
+              ]
+            },
+            {
+              "id": "uc1-s2-step3",
+              "what": "See the Meraki Cloud Gateway (MCG) in action, enabling Layer 3 roaming so users can move throughout Branch 2 without session drops or IP address changes.",
+              "why": "To highlight how Cisco's cloud-first wireless architecture solves mobility and roaming challenges.",
+              "substeps": [
+                {
+                  "id": "uc1-s2-step3-a",
+                  "label": "a",
+                  "content": "Go to Branch2. Navigate to Wireless > Campus Gateways.\n\nHere you can see the Meraki Cloud Gateway (MCG) in action. The MCG is a cloud-managed appliance that anchors wireless client traffic for SSIDs that are set up in \"tunneled\" mode."
+                },
+                {
+                  "id": "uc1-s2-step3-b",
+                  "label": "b",
+                  "content": "In Branch2, navigate to Wireless > Access Control.\n\nSelect any SSID and scroll down to Client IP and VLAN configuration section. Note that all SSIDs in Branch2 are configured to tunnel the user traffic through the MCG cluster."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc2-cisco-workflows",
+      "title": "Automate Network Deployment(s) Using Cisco Workflows for Cisco Networking",
+      "scenarios": [
+        {
+          "id": "uc2-s1-deploy-branch",
+          "title": "Deploy a New Branch with Cisco Workflows and AI Assistant",
+          "persona": "Emily Tran, Junior Network Engineer at PseudoCo",
+          "demoScenario": "PseudoCo is in a period of explosive growth, opening new branches across multiple cities every month. The company's IT leadership expects each location to have a secure, standardized network ready on day one, but the experienced network team can't be everywhere at once.\n\nEmily, a junior engineer, is tasked with deploying the new branch networks. She turns to Cisco Workflows, which allow her to automate and standardize the process with a no-code model.",
+          "painPoint": "Manual network deployment is slow, complicated, and prone to inconsistency—especially as branch count rises and IT resources continue to be stretched thin.\n\nWe use the following Cisco features and products:\n• Cisco Workflows: Workflow Visualization and Editing with drag-and-drop builders\n• Cisco AI Assistant: Enables seamless and easy way to interact with Workflows",
+          "steps": [
+            {
+              "id": "uc2-s1-step1",
+              "what": "Emily initiates a pre-built workflow in the Meraki Dashboard to automatically configure all essential network components such as VLANs, SSIDs, and security policies for the new branch.",
+              "why": "This makes branch deployment fast and reliable, allowing even junior engineers to set up secure, consistent networks without advanced configuration skills.",
+              "substeps": [
+                {
+                  "id": "uc2-s1-step1-a",
+                  "label": "a",
+                  "content": "Log into the Meraki Dashboard and click the AI Assistant icon."
+                },
+                {
+                  "id": "uc2-s1-step1-b",
+                  "label": "b",
+                  "content": "Type \"I'd like to create a new network\" and click Next. Select the \"Create New PseudoCo Network\" workflow."
+                },
+                {
+                  "id": "uc2-s1-step1-c",
+                  "label": "c",
+                  "content": "AI Assistant provides you with the modules that this workflow will perform. Confirm that you want to use this workflow. Add a branch name and subnets."
+                },
+                {
+                  "id": "uc2-s1-step1-d",
+                  "label": "d",
+                  "content": "Confirm deployment and click Next. Then navigate to Workflow > Run to see the status."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc2-s2-no-code-automation",
+          "title": "Build No-Code Automation Using Cisco Workflows",
+          "persona": "Carlos Diaz, IT Support Specialist at PseudoCo",
+          "demoScenario": "PseudoCo's business is booming. As the company launches pop-up offices and shops across the country, the IT helpdesk is overwhelmed with network setup requests.\n\nCarlos, a newer member of the IT team, explores Meraki's Workflow Automation and sees an opportunity: what if creating a new branch network could be as simple as entering a name and clicking a button?",
+          "painPoint": "Manual branch setup is tedious, slow, and inconsistent, especially for less experienced IT staff. Each network must be named, configured, and checked line by line.\n\nWe use Cisco Workflows for Networking to enable IT to build simple, guided workflows that automate complex tasks.",
+          "steps": [
+            {
+              "id": "uc2-s2-step1",
+              "what": "Carlos creates a workflow in the Meraki Dashboard that prompts the user for a branch name, then automatically provisions a new branch network with all default settings.",
+              "why": "This reduces human error, speeds up deployment, and empowers even junior IT staff to deliver flawless branch networks.",
+              "substeps": [
+                {
+                  "id": "uc2-s2-step1-a",
+                  "label": "a",
+                  "content": "In the Meraki Dashboard, navigate to Automation > Workspace and click + Create workflow. Select Blank Custom Workflow and click Continue."
+                },
+                {
+                  "id": "uc2-s2-step1-b",
+                  "label": "b",
+                  "content": "Write the name that will be used to identify the workflow and click Continue. Then click the Variables tab."
+                },
+                {
+                  "id": "uc2-s2-step1-c",
+                  "label": "c",
+                  "content": "Select the Data Type (String), change Scope to Input to determine that this block will be used to get data from the user."
+                },
+                {
+                  "id": "uc2-s2-step1-d",
+                  "label": "d",
+                  "content": "Click the Target tab. Within the Target section, click Execute on this target. Determine the Target Type as Meraki Endpoint."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc3-identity-access",
+      "title": "Cloud-First Identity-Driven Access and Segmentation with Meraki",
+      "scenarios": [
+        {
+          "id": "uc3-s1-granular-access",
+          "title": "Secure Your Network by Providing Granular Identity-based Network Access Control",
+          "persona": "Anna Moore, Network Security Administrator at PseudoCo",
+          "demoScenario": "As PseudoCo grew and began handling more sensitive client data, Anna quickly realizes that traditional, static network controls aren't enough. She needs to securely separate teams such as Developers and Finance.\n\nMeraki Access Manager, a new cloud-based Network Access Control (NAC) solution catches her eye. With Access Manager, Anna can centralize and automate how users and devices authenticate.",
+          "painPoint": "Anna used to spend hours managing a patchwork of ACLs and manual rules, constantly worrying about misconfigurations or gaps that could put data at risk.\n\nWe use the following Cisco features and products:\n• Meraki Adaptive Policy: Scalable, group-based segmentation\n• Cisco TrustSec: Dynamic SGT assignment and policy enforcement\n• Meraki Access Manager: Group assignment and authentication",
+          "steps": [
+            {
+              "id": "uc3-s1-step1",
+              "what": "Anna reviews how Adaptive Policy and SGTs are mapped and enforced.",
+              "why": "So she can be sure that segmentation is working as intended and that the business is truly protected.",
+              "substeps": [
+                {
+                  "id": "uc3-s1-step1-a",
+                  "label": "a",
+                  "content": "From the Dashboard left-navigation menu, select Access Manager > Users. Browse the Users tab to see users and groups synced with Entra ID."
+                },
+                {
+                  "id": "uc3-s1-step1-b",
+                  "label": "b",
+                  "content": "Navigate to Access Manager > Access Rules. Select the \"Allow HR Users\" rule to see VLAN assignment and Adaptive policy SGT value."
+                }
+              ]
+            },
+            {
+              "id": "uc3-s1-step2",
+              "what": "We review the session log in Access Manager to identify failed authentication attempts.",
+              "why": "Quickly pinpointing the cause of access problems helps resolve user issues faster.",
+              "substeps": [
+                {
+                  "id": "uc3-s1-step2-a",
+                  "label": "a",
+                  "content": "Click Access Manager > Session Log to see authentication successes and failures."
+                },
+                {
+                  "id": "uc3-s1-step2-b",
+                  "label": "b",
+                  "content": "Select the first failure you see. In the Network Access Details pop up, view the Failure/Rejection Info for troubleshooting."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc3-s2-segmentation",
+          "title": "Protect the Environment by Providing End-to-End Segmentation",
+          "persona": "Paul Miller, Senior Network Architect at PseudoCo",
+          "demoScenario": "As PseudoCo expanded, the complexity of its network skyrocketed. Paul knew that relying on hundreds of static ACLs and firewall rules was no longer sustainable.\n\nWith Cisco Meraki Adaptive Policy and TrustSec, Paul finally has what he needs. He can define access policies based on roles, not just IP addresses.",
+          "painPoint": "Paul struggled with time-consuming manual segmentation, out-of-sync ACLs, and the constant risk of accidental access between teams.\n\nWe use the following Cisco features and products:\n• Meraki Adaptive Policy: Scalable, group-based segmentation\n• Cisco TrustSec: Dynamic SGT assignment and policy enforcement",
+          "steps": [
+            {
+              "id": "uc3-s2-step1",
+              "what": "Paul reviews how the Adaptive Policy is set up to segment communication between different user groups.",
+              "why": "To ensure that segmentation rules are applied correctly, preventing Developers from accessing Finance resources.",
+              "substeps": [
+                {
+                  "id": "uc3-s2-step1-a",
+                  "label": "a",
+                  "content": "Navigate to Organization > Adaptive Policy. Click the Groups tab to view Cisco Trustsec scalable group tags (SGTs)."
+                },
+                {
+                  "id": "uc3-s2-step1-b",
+                  "label": "b",
+                  "content": "Click the Policies tab. Focus on the Developers to Finance policy which prevents users with SGT(18) from communicating with SGT(19)."
+                }
+              ]
+            },
+            {
+              "id": "uc3-s2-step2",
+              "what": "Paul verifies the Adaptive Policy is working as intended.",
+              "why": "To prove that segmentation is actively protecting the network and sensitive data.",
+              "substeps": [
+                {
+                  "id": "uc3-s2-step2-a",
+                  "label": "a",
+                  "content": "Navigate to Branch2 > Network-wide > Clients. View the Adaptive Policy Group column to see assigned SGTs."
+                },
+                {
+                  "id": "uc3-s2-step2-b",
+                  "label": "b",
+                  "content": "Navigate to Branch2 > Switching > Switches. Select Branch2-9300 and click the Tools tab. Run Adaptive Policy Counters to verify packets are being blocked."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc4-wireless-monitoring",
+      "title": "Optimize User Experience with Real-Time Wireless Monitoring",
+      "scenarios": [
+        {
+          "id": "uc4-s1-expected-behavior",
+          "title": "Get to Know Your Network and See the Expected Behavior",
+          "persona": "Jordan Lee, Wireless Network Administrator at PseudoCo",
+          "demoScenario": "It's the start of a busy week at PseudoCo, and Jordan Lee is eager to see how the company's latest investment in Wi-Fi 7 is paying off. With a growing number of employees using new laptops and phones equipped for Wi-Fi 7, expectations are high.\n\nJordan logs into the Meraki Dashboard, intent on making sure these next-gen clients are getting the experience they were promised.",
+          "painPoint": "As PseudoCo rolls out Wi-Fi 7, there is high pressure to ensure these new devices deliver on their promise. Without clear visibility into how Wi-Fi 7 clients are actually performing on the network, it's difficult to verify improvements.\n\nCisco solutions:\n• Cisco Meraki Dashboard: Centralized network and client monitoring\n• Meraki Assurance: Real-time client health and performance insights\n• Cisco Meraki Wi-Fi 7 Access Points",
+          "steps": [
+            {
+              "id": "uc4-s1-step1",
+              "what": "Jordan reviews the summary of wireless clients in Branch4, paying close attention to Wi-Fi 7 capable devices.",
+              "why": "To confirm that Wi-Fi 7 clients are connecting as expected and performing at peak efficiency.",
+              "substeps": [
+                {
+                  "id": "uc4-s1-step1-a",
+                  "label": "a",
+                  "content": "Select Branch4. Navigate to Assurance > Clients. Select device with MAC: 24:eb:16:35:50:89, identified as a Wi-Fi 7 client."
+                },
+                {
+                  "id": "uc4-s1-step1-b",
+                  "label": "b",
+                  "content": "Note the device capable Wi-Fi standards, you should see 6 GHz band, which is synonymous with Wi-Fi 7 support."
+                },
+                {
+                  "id": "uc4-s1-step1-c",
+                  "label": "c",
+                  "content": "Go to Performance tab, to see how this device is performing on the 2.4 GHz, 5 GHz, and 6 GHz bands."
+                }
+              ]
+            },
+            {
+              "id": "uc4-s1-step2",
+              "what": "Jordan accesses the Client summary page to see general trends and traffic patterns.",
+              "why": "Quick access to summarized client health helps identify usage patterns and potential congestion.",
+              "substeps": [
+                {
+                  "id": "uc4-s1-step2-a",
+                  "label": "a",
+                  "content": "In Branch2, navigate to Assurance > Clients. Explore the page. Notice the client information and general trends."
+                },
+                {
+                  "id": "uc4-s1-step2-b",
+                  "label": "b",
+                  "content": "Click Settings (the Gear icon). Notice the other information you can display in the table."
+                },
+                {
+                  "id": "uc4-s1-step2-c",
+                  "label": "c",
+                  "content": "Click to expand the Application Details list under the pie chart diagram to review common applications."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc4-s2-troubleshoot-connectivity",
+          "title": "Identify and Troubleshoot Client Connectivity Issues",
+          "persona": "Carol Freeman, Network Administrator at PseudoCo",
+          "demoScenario": "Carol receives complaints of slow Wi-Fi connections. Users are reporting trouble in video calls and slow file downloads.",
+          "painPoint": "A poor Wi-Fi experience can be caused due to many reasons, such as access points operating in a congested channel or a client connecting to a far away AP.\n\nCisco solutions:\n• Meraki Dashboard with Wireless Assurance\n• Meraki AI-Enhanced Radio Resource Management (AI-RRM)",
+          "steps": [
+            {
+              "id": "uc4-s2-step1",
+              "what": "Carol uses Cisco Meraki Wireless Access Points performance view.",
+              "why": "Since we know users complain of slow Wi-Fi, we will first check the Wi-Fi performance metrics view for live real-time insights.",
+              "substeps": [
+                {
+                  "id": "uc4-s2-step1-a",
+                  "label": "a",
+                  "content": "From the Network drop-down, choose Branch2. Navigate to Wireless > Access points. Click Packet Loss for details."
+                },
+                {
+                  "id": "uc4-s2-step1-b",
+                  "label": "b",
+                  "content": "Identify access points exhibiting high packet loss. View the Average packet loss by SSID and time series view."
+                }
+              ]
+            },
+            {
+              "id": "uc4-s2-step2",
+              "what": "Identify and analyze sources of wireless interference affecting the Meraki access points.",
+              "why": "Checking the RF spectrum helps us find out if interference or channel congestion is causing packet loss.",
+              "substeps": [
+                {
+                  "id": "uc4-s2-step2-a",
+                  "label": "a",
+                  "content": "Navigate to Wireless > Overview > RF Spectrum. Click the affected Branch2-AP1 to open AP Neighbors view."
+                },
+                {
+                  "id": "uc4-s2-step2-b",
+                  "label": "b",
+                  "content": "Select the 5 Ghz band. Multiple APs operating on the same channel 149 may be causing high utilization."
+                }
+              ]
+            },
+            {
+              "id": "uc4-s2-step3",
+              "what": "AI-Enhanced Radio Resource Management (AI-RRM) is enabled in the Meraki Dashboard.",
+              "why": "Enabling AI-RRM allows the network to proactively detect and resolve RF interference and congestion.",
+              "substeps": [
+                {
+                  "id": "uc4-s2-step3-a",
+                  "label": "a",
+                  "content": "Navigate to Wireless > Configure > Radio Settings. Click the RRM tab. Toggle on AI-RRM to Enable."
+                },
+                {
+                  "id": "uc4-s2-step3-b",
+                  "label": "b",
+                  "content": "Scroll down to the Busy hour section. Meraki automatically calculates busy hours to avoid RRM changes during peak times."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc4-s3-rogue-access-points",
+          "title": "Detect and Neutralize Rogue Access Points in Your Network",
+          "persona": "Sarah Brown, Sr. Wireless Architect at PseudoCo",
+          "demoScenario": "One Monday morning, Sarah Brown is alerted by several helpdesk tickets: users are complaining about unreliable Wi-Fi and suspicious new networks showing up. A rogue access point can open the door to data breaches.",
+          "painPoint": "Rogue access points can silently undermine security, allowing unauthorized devices onto the network.\n\nCisco solutions:\n• Meraki Dashboard with Wireless Assurance\n• Meraki Air Marshal",
+          "steps": [
+            {
+              "id": "uc4-s3-step1",
+              "what": "Sarah reviews Meraki Air Marshal and determines there are rogue access points.",
+              "why": "Rogue access points allow unintended access to the corporate network and resources.",
+              "substeps": [
+                {
+                  "id": "uc4-s3-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Wireless > Air Marshal. From the dashboard, view SSIDs operating within the wireless spectrum."
+                },
+                {
+                  "id": "uc4-s3-step1-b",
+                  "label": "b",
+                  "content": "Click the Rogue SSIDs tab. There is one Rogue SSID called hacker_ap1. Click it to view details."
+                },
+                {
+                  "id": "uc4-s3-step1-c",
+                  "label": "c",
+                  "content": "Click Edit, select Contain and click Confirm. The AP will send de-authentication packets to prevent clients from connecting."
+                }
+              ]
+            },
+            {
+              "id": "uc4-s3-step2",
+              "what": "Sarah physically locates and blocks the rogue access point.",
+              "why": "Containing the SSID is only step one. The next step is to block it across the network.",
+              "substeps": [
+                {
+                  "id": "uc4-s3-step2-a",
+                  "label": "a",
+                  "content": "Note the MAC address 2c:cf:67:42:c4:1f. Navigate to Network-wide > Clients and find matching MAC."
+                },
+                {
+                  "id": "uc4-s3-step2-b",
+                  "label": "b",
+                  "content": "Select wlanpi-41f. In the client dashboard, view which switch it's connected to and change device policy to Block Access."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc4-s4-dhcp-failure",
+          "title": "Identify and Resolve a Client's Network Access Issues",
+          "persona": "Alex Chen, Wireless Support Specialist at PseudoCo",
+          "demoScenario": "A user logs a ticket: \"I can connect to the IOT Wi-Fi, but I can't open any websites or access company resources.\" For Alex, this is a classic case of a connection that looks successful but fails in practice.",
+          "painPoint": "A client can associate with the wireless network but still be left stranded if it doesn't receive a valid IP address from DHCP.\n\nCisco solution:\n• Meraki Dashboard with Assurance: Immediate insights into client connection steps and failures",
+          "steps": [
+            {
+              "id": "uc4-s4-step1",
+              "what": "Alex reviews wireless client connection logs to identify a DHCP failure.",
+              "why": "To quickly determine that the root cause of the client's issue is a missing DHCP response.",
+              "substeps": [
+                {
+                  "id": "uc4-s4-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Wireless > Access Points. In the Overview page, clients have a 0% DHCP success rate. Click DHCP Success."
+                },
+                {
+                  "id": "uc4-s4-step1-b",
+                  "label": "b",
+                  "content": "Navigate to Assurance > Clients. Select client with MAC: 74:19:f8:16:14:16. The client is using an APIPA address."
+                },
+                {
+                  "id": "uc4-s4-step1-c",
+                  "label": "c",
+                  "content": "Click the Connections tab. It clearly indicates a DHCP failure in the connection process."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc4-s5-auth-failure",
+          "title": "Troubleshoot Why a Client Cannot Connect to the Network",
+          "persona": "Sam Patel, IT Support Specialist at PseudoCo",
+          "demoScenario": "Kristi Holland from the Finance department reports that she can't connect to the corporate Wi-Fi in Branch1. Every connection attempt fails and payroll submissions are due within the hour.",
+          "painPoint": "Authentication errors like wrong passwords are common and disruptive, but without clear diagnostics, IT can waste valuable time.\n\nCisco solutions:\n• Meraki Dashboard with Assurance\n• Meraki Access Manager: Detailed session logs",
+          "steps": [
+            {
+              "id": "uc4-s5-step1",
+              "what": "Sam reviews Kristi's recent connection attempts and authentication logs.",
+              "why": "To identify the issue and provide a fast resolution, minimizing downtime.",
+              "substeps": [
+                {
+                  "id": "uc4-s5-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Assurance > Clients. Search for MAC address 74:19:f8:16:25:c1. The device fails to authenticate."
+                },
+                {
+                  "id": "uc4-s5-step1-b",
+                  "label": "b",
+                  "content": "Go to the Connections tab. The Primary failure stage is Authentication."
+                },
+                {
+                  "id": "uc4-s5-step1-c",
+                  "label": "c",
+                  "content": "Navigate to Access Manager > Session Log. Search for kholland@pseudoco.com. The reason is incorrect username and password."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc4-s6-supplicant-issue",
+          "title": "Identify Connection Problems for One Specific Client",
+          "persona": "Emily Johnson, IT Support Engineer at PseudoCo",
+          "demoScenario": "Alice, an employee, is unable to connect her laptop to the corporate wireless network. Her device just won't join the network despite several attempts.",
+          "painPoint": "Troubleshooting individual client connection failures is challenging when everything on the network side is correctly configured.\n\nCisco solutions:\n• Meraki Dashboard with Assurance\n• Meraki Access Manager: Per-session logs",
+          "steps": [
+            {
+              "id": "uc4-s6-step1",
+              "what": "Emily reviews Alice's connection attempts and authentication logs.",
+              "why": "To quickly confirm that the issue is not due to a network or IT misconfiguration.",
+              "substeps": [
+                {
+                  "id": "uc4-s6-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Assurance > Clients. Search for MAC address: 74:19:f8:16:22:c7."
+                },
+                {
+                  "id": "uc4-s6-step1-b",
+                  "label": "b",
+                  "content": "Navigate to Wireless > Access points > Connection log to review connection attempts."
+                },
+                {
+                  "id": "uc4-s6-step1-c",
+                  "label": "c",
+                  "content": "Navigate to Access Manager > Session Log. Alice's device is using MSCHAPv2, not supported by Meraki. Guide her to switch to PEAP or EAP-TLS."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc5-wired-network",
+      "title": "Maintain Wired Network Uptime and Reliability Using Monitoring and Assurance Tools",
+      "scenarios": [
+        {
+          "id": "uc5-s1-network-alerts",
+          "title": "Prevent Network Slowdowns: Get Alerts for Wired Network Problems",
+          "persona": "Harper Simmons, Network Specialist at PseudoCo",
+          "demoScenario": "At PseudoCo, the wired network is the backbone of daily operations. Harper knows that if a switch or port experiences issues, the ripple effect can be immediate.",
+          "painPoint": "Wired client issues can develop silently and go unnoticed until they disrupt business critical functions.\n\nCisco solutions:\n• Meraki Dashboard: Real-time monitoring and proactive alerts\n• Meraki Managed Catalyst and MS Switches",
+          "steps": [
+            {
+              "id": "uc5-s1-step1",
+              "what": "Harper monitors for critical network alerts, such as STP root guard activations.",
+              "why": "To quickly detect and neutralize threats like STP loops before they disrupt the business.",
+              "substeps": [
+                {
+                  "id": "uc5-s1-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Assurance > Alerts. Click the \"Root guard activated, STP discarding packets\" alert."
+                },
+                {
+                  "id": "uc5-s1-step1-b",
+                  "label": "b",
+                  "content": "View the AI-generated explanation of what triggered the alert and recommended actions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc5-s2-switch-port-issues",
+          "title": "Protect Network Uptime by Quickly Finding and Resolving Issues on Switch Ports",
+          "persona": "Ethan Kim, Network Support Lead at PseudoCo",
+          "demoScenario": "During peak production hours, Ethan gets a frantic call: the main label printer in the warehouse is offline. With Meraki's monitoring tools, Ethan immediately pinpoints the root cause.",
+          "painPoint": "A single misconfigured port can put the brakes on critical business functions.\n\nCisco solutions:\n• Meraki Dashboard: Real-time monitoring\n• Meraki Managed Catalyst and MS Switches",
+          "steps": [
+            {
+              "id": "uc5-s2-step1",
+              "what": "Ethan investigates port forwarding issues caused by an access policy.",
+              "why": "To restore critical device connectivity and ensure business operations aren't interrupted.",
+              "substeps": [
+                {
+                  "id": "uc5-s2-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Switches > Branch1-MS130 and select port 14."
+                },
+                {
+                  "id": "uc5-s2-step1-b",
+                  "label": "b",
+                  "content": "The port is not forwarding due to a MAC Allow List. Click Edit Port Configuration to update allowed MAC addresses."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc5-s3-intermittent-connectivity",
+          "title": "Detect Device Connectivity Issues to Maintain Stability",
+          "persona": "Riley Morgan, Network Operations Center Analyst at PseudoCo",
+          "demoScenario": "It's the middle of quarter end rush, and Riley notices several workstations in Branch3 are dropping offline every few minutes.",
+          "painPoint": "Intermittent connectivity issues can silently erode productivity and trust in IT.\n\nCisco solutions:\n• Meraki Dashboard\n• Meraki-Managed Catalyst and MS Switches",
+          "steps": [
+            {
+              "id": "uc5-s3-step1",
+              "what": "Riley diagnoses unstable connection affecting user connectivity.",
+              "why": "Identify the root cause for intermittent issues with switch connectivity.",
+              "substeps": [
+                {
+                  "id": "uc5-s3-step1-a",
+                  "label": "a",
+                  "content": "Select Branch3. Navigate to Switching > Switches. Click Branch3-C9300X-1. Review historical connectivity data and event logs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc5-s4-wired-client-issues",
+          "title": "Find Connection Failures: Identify Wired Client Problems",
+          "persona": "Jenna Patel, IT Service Desk Specialist at PseudoCo",
+          "demoScenario": "Jenna's support phone rings: Dawn from Accounting can't connect to the wired network, and payroll submissions are due within the hour.",
+          "painPoint": "Complex, misapplied policies can block users at the worst possible moment.\n\nCisco solutions:\n• Meraki Dashboard\n• Meraki Access Manager\n• Meraki-Managed Catalyst and MS Switches",
+          "steps": [
+            {
+              "id": "uc5-s4-step1",
+              "what": "Jenna troubleshoots a wired client connection issue reported by user Dawn Turner.",
+              "why": "To resolve user frustration quickly and ensure network access policies are correctly enforced.",
+              "substeps": [
+                {
+                  "id": "uc5-s4-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Assurance > Clients. Select device with MAC: f4:4d:ad:05:6e:ee. Port is connected but blocked due to access policy."
+                },
+                {
+                  "id": "uc5-s4-step1-b",
+                  "label": "b",
+                  "content": "Navigate to Access Manager > Session Log. User dturner@pseudoco.com was rejected due to \"Reject Too Many Groups\" rule."
+                },
+                {
+                  "id": "uc5-s4-step1-c",
+                  "label": "c",
+                  "content": "Navigate to Access Manager > Users and search for Dawn Turner. She is a member of all 3 groups, causing rejection."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc5-s5-config-changes",
+          "title": "Stay in Control: Beware of All Configuration Changes",
+          "persona": "Carol Freeman, Network Administrator at PseudoCo",
+          "demoScenario": "Just after lunch, printers stop working across Branch3. Carol quickly suspects a recent network change. Using the Meraki Dashboard, she reviews the configuration history.",
+          "painPoint": "Undocumented or accidental network changes can cripple shared resources.\n\nCisco solution:\n• Meraki Dashboard: Complete visibility of the catalyst infrastructure",
+          "steps": [
+            {
+              "id": "uc5-s5-step1",
+              "what": "We navigate to the Meraki Dashboard to troubleshoot by investigating the config history.",
+              "why": "Track configuration changes over time, providing a clear audit trail.",
+              "substeps": [
+                {
+                  "id": "uc5-s5-step1-a",
+                  "label": "a",
+                  "content": "Choose Branch3. Navigate to Switching > Switches. Click a Switch, then click Config History."
+                },
+                {
+                  "id": "uc5-s5-step1-b",
+                  "label": "b",
+                  "content": "The dashboard highlights a recent edition of an access control list preventing user subnet from accessing printers."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc6-thousandeyes",
+      "title": "Improve Time to Resolution with Comprehensive Network Monitoring via Meraki and ThousandEyes Integration",
+      "scenarios": [
+        {
+          "id": "uc6-s1-app-performance",
+          "title": "Accelerate Troubleshooting with Meraki and ThousandEyes: Application Performance Degradation",
+          "persona": "Carol Freeman, Network Administrator at PseudoCo",
+          "demoScenario": "Carol receives a call from a user reporting painfully slow speeds when trying to download files from Box, their cloud-based collaboration platform. The problem could be anywhere—local Wi-Fi, the office switch, the WAN, the ISP, or even the Box app itself.",
+          "painPoint": "Without end-to-end visibility, Carol would be left scrambling to identify which segment is causing the issue.\n\nCisco solutions:\n• Meraki Dashboard with ThousandEyes Integration\n• ThousandEyes Enterprise Agents\n• ThousandEyes Endpoint Agents",
+          "steps": [
+            {
+              "id": "uc6-s1-step1",
+              "what": "We start in Cisco Meraki Dashboard with ThousandEyes integration. We know Box.com is slow to load so we need to address it quickly.",
+              "why": "Initiating troubleshooting in Cisco Meraki with ThousandEyes integration will quickly pinpoint the issue.",
+              "substeps": [
+                {
+                  "id": "uc6-s1-step1-a",
+                  "label": "a",
+                  "content": "Select Branch1. Navigate to Insights > Web App Health. Click the Box application."
+                },
+                {
+                  "id": "uc6-s1-step1-b",
+                  "label": "b",
+                  "content": "Click VIEW TRENDS for Branch2. ThousandEyes Enterprise Agents provide continuous testing from MX firewalls."
+                },
+                {
+                  "id": "uc6-s1-step1-c",
+                  "label": "c",
+                  "content": "Navigate to Assurance > Analytics > Overview. From the Time drop-down, choose Last Day."
+                },
+                {
+                  "id": "uc6-s1-step1-d",
+                  "label": "d",
+                  "content": "Scroll down to Applications tile. Click Box for the alert flyout window. Click Internet to focus on connectivity."
+                },
+                {
+                  "id": "uc6-s1-step1-e",
+                  "label": "e",
+                  "content": "Click the first Packet Loss alert. Click \"Investigate further in ThousandEyes\" to see correlated metrics."
+                },
+                {
+                  "id": "uc6-s1-step1-f",
+                  "label": "f",
+                  "content": "Click Agent to Server. View the path visualization to see nodes between network and Box application server with packet loss."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc6-s2-mobile-monitoring",
+          "title": "Eliminating Blind Spots: Proactive Monitoring for Mobile Devices",
+          "persona": "Marcus, IT Operations Manager at PseudoCo",
+          "demoScenario": "PseudoCo's warehouse and retail teams rely on Android-based portable barcode scanners to track inventory. Recently, users have been complaining that their scanners frequently lose connection.",
+          "painPoint": "Troubleshooting mobile device connectivity is notoriously difficult. Issues can be caused by Wi-Fi handoffs, dead zones, or unpredictable application behavior.\n\nCisco solutions:\n• ThousandEyes Mobile Agents: Installed directly on barcode scanners\n• ThousandEyes Dashboard: Centralizes monitoring of all mobile agents",
+          "steps": [
+            {
+              "id": "uc6-s2-step1",
+              "what": "Marcus deploys ThousandEyes Mobile Agents to Android barcode scanners and uses the ThousandEyes Dashboard to monitor live connectivity.",
+              "why": "This approach enables Marcus to pinpoint exactly where and when connectivity drops happen.",
+              "substeps": [
+                {
+                  "id": "uc6-s2-step1-a",
+                  "label": "a",
+                  "content": "In ThousandEyes Dashboard, navigate to Endpoint Experience > Agent Views. Search for \"Barcode-Scanner-1\"."
+                },
+                {
+                  "id": "uc6-s2-step1-b",
+                  "label": "b",
+                  "content": "Navigate to Segment Visualization tab and click Applications. View unhealthy status for applications used by PseudoCo's teams."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uc6-s3-webex-calling",
+          "title": "Troubleshoot Webex Calling Issues with Control Hub, ThousandEyes, and Meraki Integrations",
+          "persona": "Sarah Jennings, Help Desk Administrator at PseudoCo",
+          "demoScenario": "Sarah received a call from Anita, one of the company's employees. Anita explained that she was experiencing intermittent issues with her Cisco 9861 desk phone—calls were dropping, and the audio quality was poor.",
+          "painPoint": "Without integration of Webex Control Hub, Cisco ThousandEyes, and Cisco Meraki, troubleshooting would be much more time-consuming.\n\nCisco solutions:\n• Webex Control Hub\n• ThousandEyes\n• Meraki Dashboard",
+          "steps": [
+            {
+              "id": "uc6-s3-step1",
+              "what": "Sarah logs into Webex Control Hub so she can view the calls made by Anita.",
+              "why": "Control Hub is the single place of information for all Webex Calls.",
+              "substeps": [
+                {
+                  "id": "uc6-s3-step1-a",
+                  "label": "a",
+                  "content": "Log into Webex Control Hub. Click Troubleshooting. Search for Anita's calls using: pseudococampus+anitacooper@gmail.com"
+                },
+                {
+                  "id": "uc6-s3-step1-b",
+                  "label": "b",
+                  "content": "Find a call listed as Poor and select it. Scroll down to End-to-cloud network path card."
+                },
+                {
+                  "id": "uc6-s3-step1-c",
+                  "label": "c",
+                  "content": "Click one of the red paths for Anita. Click Launch ThousandEyes dashboard to see where packet loss is happening."
+                },
+                {
+                  "id": "uc6-s3-step1-d",
+                  "label": "d",
+                  "content": "Go back to Control Hub. Under Anita Cooper, click Check Meraki dashboard to view the phone information and packet captures."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc7-splunk",
+      "title": "Use Splunk Enterprise to Search, Analyze, and Visualize Your Meraki and ThousandEyes Data",
+      "scenarios": [
+        {
+          "id": "uc7-s1-splunk-explore",
+          "title": "Explore and Interact with Splunk Enterprise",
+          "persona": "Cindy Cross, Network Wireless Administrator at PseudoCo",
+          "demoScenario": "Cindy is responsible for conducting regular network audits. She initiates this process by logging into Meraki Dashboard and ThousandEyes. During her review, she identifies connectivity issues in both applications but struggles to establish correlation.",
+          "painPoint": "Without an end-to-end data and correlation engine, Cindy would spend considerable manual work to identify if what she sees in ThousandEyes is a result of what she sees on the Meraki network side.\n\nCisco solutions:\n• Splunk Enterprise\n• Meraki Dashboard\n• ThousandEyes",
+          "steps": [
+            {
+              "id": "uc7-s1-step1",
+              "what": "We start in Splunk Enterprise to understand how data is collected, visualized and correlated across various data sources.",
+              "why": "The Splunk Dashboard provides administrators with a comprehensive overview of network health across Meraki and ThousandEyes organizations.",
+              "substeps": [
+                {
+                  "id": "uc7-s1-step1-a",
+                  "label": "a",
+                  "content": "In the Splunk Enterprise Web UI, click the Dashboard tab. The custom PseudoCo Campus Health dashboard displays by default."
+                },
+                {
+                  "id": "uc7-s1-step1-b",
+                  "label": "b",
+                  "content": "Investigate the first tab, Global & Wired. This shows organization-wide network health from Meraki Dashboard."
+                },
+                {
+                  "id": "uc7-s1-step1-c",
+                  "label": "c",
+                  "content": "Switch to the Wireless Health tab. View wireless network statistics and most commonly seen issues."
+                },
+                {
+                  "id": "uc7-s1-step1-d",
+                  "label": "d",
+                  "content": "Switch to the ThousandEyes Monitoring tab. View popular tests and most commonly seen failure reasons."
+                },
+                {
+                  "id": "uc7-s1-step1-e",
+                  "label": "e",
+                  "content": "Scroll down to check ThousandEyes Network Test results, including latency, jitter, and loss metrics."
+                },
+                {
+                  "id": "uc7-s1-step1-f",
+                  "label": "f",
+                  "content": "(OPTIONAL) Click the magnifying glass icon on any widget to see how they were built with SPL queries."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "creatorEmail": "cisco-dcloud@cisco.com",
+  "createdAt": "2025-08-25T00:00:00.000Z",
+  "updatedAt": "2025-08-25T00:00:00.000Z",
+  "status": "published"
+}
